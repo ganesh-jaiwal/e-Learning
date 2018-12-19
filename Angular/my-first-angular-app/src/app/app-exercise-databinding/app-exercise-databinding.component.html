@@ -3,7 +3,10 @@
 	<p>
 		{{ userName }}
 	</p>
-	<button class="btn btn-primary" [disabled]="userName.length > 0 ? false : true" (click)="clearUserName()">
+	<!-- <button class="btn btn-primary" [disabled]="userName.length > 0 ? false : true" (click)="clearUserName()">
+		Clear
+	</button> -->
+	<button class="btn btn-primary" [disabled]="!(userName.length > 0)" (click)="clearUserName()">
 		Clear
 	</button>
 </div>

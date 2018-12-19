@@ -26,6 +26,8 @@ export class ServersComponent implements OnInit {
     if(this.serverName == "") {
       this.allowNewServer = false;
       this.isServerName = false;
+    } else {
+      this.allowNewServer = true;
     }
   }
   ngOnInit() {
