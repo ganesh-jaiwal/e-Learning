@@ -1,5 +1,12 @@
-<h2>The Parent Component</h2>
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
-<p [innerText]="allowNewServer"></p>
-<app-server></app-server>
-<app-server></app-server>
+<div class="mainDiv">
+	<h2>The Parent Component</h2>
+	<label>Server Name</label>
+	<!-- <input type="text" class="form-control" (input)="onServerNameUpdated($event)"/> -->
+	<input type="text" class="form-control" [(ngModel)]="serverName"/>
+	<p>{{ serverName }}</p>
+	<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onServerCreated()">Add Server</button>
+	<!-- <p [innerText]="serverCreatedStatus"></p> -->
+	<p *ngIf="isServerName">Server was created, Server name is {{ serverName }}.</p>
+	<app-server></app-server>
+	<app-server></app-server>
+</div>
