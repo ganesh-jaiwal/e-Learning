@@ -9,6 +9,7 @@ import { ErrorComponent } from './error/error.component';
 import { WarningComponent } from './warning/warning.component';
 import { ExercisesComponent } from './exercises/exercises.component';
 import { AppExerciseDatabindingComponent } from './app-exercise-databinding/app-exercise-databinding.component';
+import { AppExerciseStoreLogsComponent } from './app-exercise-store-logs/app-exercise-store-logs.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppExerciseDatabindingComponent } from './app-exercise-databinding/app-
     ErrorComponent,
     WarningComponent,
     ExercisesComponent,
-    AppExerciseDatabindingComponent
+    AppExerciseDatabindingComponent,
+    AppExerciseStoreLogsComponent
   ],
   imports: [
     BrowserModule,

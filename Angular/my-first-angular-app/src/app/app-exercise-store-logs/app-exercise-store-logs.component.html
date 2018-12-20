@@ -1,0 +1,12 @@
+<hr>
+<button class="btn btn-primary" (click)="onShowClick()">{{ showDetails }}</button>
+<div class="msg-div">
+	<p *ngIf="showDetails === 'Hide Details'">
+	  Secret Password is "uef232u235jkg".
+	</p>
+</div>
+<ul>
+	<li *ngFor="let log of logsArray;let i = index">
+		<p [ngClass]="{showBGBlue: i>3}">{{ log }}</p>
+	</li>
+</ul>

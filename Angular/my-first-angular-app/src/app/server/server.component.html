@@ -1,3 +1,5 @@
-<h3 [ngStyle]="{backgroundColor: getColor()}">{{ 'Server' }} With Id {{ serverId }} is {{ getServerStatus() }}</h3>
-<app-error></app-error>
-<app-warning></app-warning>
+<h3 [ngStyle]="{backgroundColor: getColor()}"
+	[ngClass]="{online: serverStatus === 'Online', offline: serverStatus === 'Offline'}"
+>{{ 'Server' }} With Id {{ serverId }} is {{ getServerStatus() }}</h3>
+<!-- <app-error></app-error>
+<app-warning></app-warning> -->

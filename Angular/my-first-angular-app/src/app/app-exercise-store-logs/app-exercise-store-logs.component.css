@@ -1,0 +1,9 @@
+.msg-div {
+	height: 50px;
+	padding-top: 10px;
+	font-size: 18px;
+}
+.showBGBlue {
+	background-color: blue;
+	color: white;
+}
