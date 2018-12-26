@@ -12,7 +12,7 @@ export class NewAccountComponent {
   constructor(private accountsService: AccountsService) {
     this.accountsService.statusUpdated.subscribe(
       (status: string) => alert('Updated Status is : ' + status)
-    )
+    );
   }
 
   onCreateAccount(accountName: string, accountStatus: string) {
