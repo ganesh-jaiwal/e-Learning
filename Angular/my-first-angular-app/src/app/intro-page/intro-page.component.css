@@ -1,0 +1,15 @@
+.main-div {
+  width: 350px;
+  border: solid 1px;
+  padding: 40px 20px 20px 20px;
+}
+.login-head, .continue-without-login {
+  text-align: center;
+  padding: 10px 0px;
+}
+.signup-btn-div {
+  text-align: center;
+}
+.continue-without-login {
+  margin-top: 10px;
+}
