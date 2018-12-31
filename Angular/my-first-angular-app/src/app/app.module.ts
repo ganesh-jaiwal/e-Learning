@@ -10,6 +10,7 @@ import { WarningComponent } from './warning/warning.component';
 import { ExercisesComponent } from './exercises/exercises.component';
 import { AppExerciseDatabindingComponent } from './app-exercise-databinding/app-exercise-databinding.component';
 import { AppExerciseStoreLogsComponent } from './app-exercise-store-logs/app-exercise-store-logs.component';
+import { IntroPageComponent } from './intro-page/intro-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AppExerciseStoreLogsComponent } from './app-exercise-store-logs/app-exe
     WarningComponent,
     ExercisesComponent,
     AppExerciseDatabindingComponent,
-    AppExerciseStoreLogsComponent
+    AppExerciseStoreLogsComponent,
+    IntroPageComponent
   ],
   imports: [
     BrowserModule,
