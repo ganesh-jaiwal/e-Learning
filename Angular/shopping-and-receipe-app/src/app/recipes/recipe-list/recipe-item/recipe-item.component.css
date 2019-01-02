@@ -1,3 +1,6 @@
 .recipe-item {
   max-width: 85%;
 }
+a {
+  cursor: pointer;
+}
