@@ -1,11 +1,10 @@
-import {EventEmitter, Injectable} from '@angular/core';
-import {Recipe} from './recipe.model';
-import {Ingredients} from '../shared/ingredients.model';
-import {ShoppingListService} from '../shopping-list/shopping-list.service';
+import { Injectable } from '@angular/core';
+import { Recipe } from './recipe.model';
+import { Ingredients } from '../shared/ingredients.model';
+import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
 @Injectable()
 export class RecipeService {
-  recipeSelected = new EventEmitter<Recipe>();
   recipes: Recipe[] = [
     new Recipe('Scrambled Eggs with Chicken Sausages Recipe',
       'Smack your lips over simple and easy to prepare scrambled eggs tossed in mild spices with chicken sausages.',
