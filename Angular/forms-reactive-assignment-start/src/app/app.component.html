@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <h2>Create Project</h2>
+      <form [formGroup]="projectCreate" (ngSubmit)="onFormSubmit()">
+        <div class="form-group">
+          <label for="email">Project Name</label>
+          <input
+            type="text"
+            id="pname"
+            class="form-control"
+            formControlName="projectname"
+            name="pname"
+          >
+          <span *ngIf="!projectCreate.get('projectname').valid && projectCreate.get('projectname').touched">
+            <span *ngIf="projectCreate.get('projectname').errors['required']">
+              Project name is required!!!
+            </span>
+            <span *ngIf="projectCreate.get('projectname').errors['rejectedName']">
+              This project name is not allowed!!!
+            </span>
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="email">email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            name="email"
+            formControlName="email"
+          >
+          <span *ngIf="!projectCreate.get('email').valid && projectCreate.get('email').touched">
+            <span *ngIf="projectCreate.get('email').errors['required']">
+              Email is required!!!
+            </span>
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="project-status">Select Project Status</label>
+          <select
+            id="project-status"
+            class="form-control"
+            name="project-status"
+            formControlName="projectstatus"
+          >
+            <option value="stable">Stable</option>
+            <option value="critical">Critical</option>
+            <option value="finished">Finished</option>
+          </select>
+        </div>
+        <button
+          class="btn btn-primary"
+          type="submit"
+          [disabled]="!projectCreate.valid">Submit</button>
+      </form>
+      <div class="row" *ngIf="projectSubmitted">
+        <h4>Your data</h4>
+        <pre>{{ formValues }}</pre>
+      </div>
+    </div>
+  </div>
+</div>
