@@ -23,7 +23,7 @@ const appRoutes: Routes = [
     canActivateChild: [AuthGuard],
     component: ServersComponent, children: [
       {path: ':id', component: ServerComponent, resolve: { server: ServerResolver }},
-      {path: ':id/edit', component: EditServerComponent, canDeactivate:[CanDeactivateGuard]}
+      {path: ':id/edit', component: EditServerComponent, canDeactivate: [CanDeactivateGuard]}
     ]},
   // {path: 'page-not-found', component: PageNotFoundComponent},
   {path: 'page-not-found', component: ErrorPageComponent, data: { message: 'Page Not Found!!!!' }},
