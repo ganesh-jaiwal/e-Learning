@@ -3,13 +3,37 @@
   border: solid 1px;
   padding: 40px 20px 20px 20px;
 }
-.login-head, .continue-without-login {
+.login-head {
   text-align: center;
   padding: 10px 0px;
+  font-size: 11px;
 }
 .signup-btn-div {
   text-align: center;
 }
 .continue-without-login {
+  text-align: center;
+  padding: 10px 0px;
   margin-top: 10px;
+}
+.intro-body li {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.56rem;
+}
+.intro-body ul {
+  padding-left: 70px;
+  margin: 25px auto;
+}
+.intro-body h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.signup-free {
+  font-size: 14.8px;
+  text-transform: uppercase;
+}
+.continue-without-login button {
+  text-transform: uppercase;
+  font-size: 10px;
 }
